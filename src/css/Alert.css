@@ -1,0 +1,54 @@
+.alert {
+  position: fixed;
+  top:10vh;
+  left: 45%;
+  display: inline-block;
+  border-radius: 10px;
+  border: solid 3px;
+  animation-name: show;
+  animation-duration: 0.1s;
+  animation-timing-function: ease-in-out;
+}
+
+
+.alert-message{
+  margin:5px;
+}
+
+.alert>.header {
+  display: flex;
+  justify-content: center
+}
+
+.fail {
+  background-color: #F0BCBD;
+  color: #49090E;
+  border-color: #880620;
+}
+
+.success {
+  background-color: #A0D189;
+  color: #223B17;
+  border-color: #3C6728;
+}
+
+.warning {
+  background-color: #C6DEFB;
+  color: #072F5F;
+  border-color: #0A4185;
+}
+
+.none{
+  display: none;
+}
+
+@keyframes show {
+  from {
+    top:5vh;
+    opacity: 0;
+  }
+  to {
+    top:10vh;
+    opacity: 100;
+  }
+}

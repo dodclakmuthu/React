@@ -1,3 +1,5 @@
+import React from 'react';
+
 function TopNav () {
   return (
     <nav className="top-nav">
